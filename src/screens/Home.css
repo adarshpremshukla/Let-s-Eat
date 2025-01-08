@@ -1,0 +1,23 @@
+ /* .full-image {
+    height: 100vh; 
+    object-fit: cover;
+  } */
+  /*
+  @media (max-width: 768px) {
+    .full-image {
+      height: auto; 
+      object-fit: contain; 
+    }
+  }
+   */
+
+
+
+  
+  @media (max-width: 768px) {
+    .full-image {
+      height: 120vh; 
+      object-fit: cover; /* Ensures the image still covers the container */
+    }
+  }
+  
