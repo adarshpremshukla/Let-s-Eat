@@ -12,8 +12,9 @@ export default function Home() {
 
   const loadFoodItems = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/foodData", {
-      // let response = await fetch("http://localhost:5000/api/auth/foodData", {
+      // let response = await fetch("http://localhost:5000/api/foodData", {
+      // this is working
+      let response = await fetch("http://localhost:5000/api/auth/foodData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -45,7 +46,7 @@ export default function Home() {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner " id="carousel">
-            <div class=" carousel-caption  " style={{ zIndex: "9" }}>
+            <div className=" carousel-caption  " style={{ zIndex: "9" }}>
               <div className=" d-flex justify-content-center">
                 {" "}
                 {/* justify-content-center, copy this <form> from navbar for search box */}
